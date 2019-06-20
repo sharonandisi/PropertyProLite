@@ -1,3 +1,32 @@
+body{
+    background-color: white;
+    opacity:;
+}
+
+.flex {
+    margin-top: 3em;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url(images/header1.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.flex h2 {
+
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.flex p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+    font-size: 20px;
+}
 
 .grid-layout {
     display: grid;
@@ -16,15 +45,10 @@
     color: #929796;
     background-color: #333;
     border-radius: 5px;
-    &:nth-child(odd) {
-        background-color: #424242;
-    }
+    
 }
 
-.span-3 {
-    grid-column-end: span 3;
-    grid-row-end: span 4;
-}
+
 
 
 
