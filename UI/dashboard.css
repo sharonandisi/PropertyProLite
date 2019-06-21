@@ -5,8 +5,8 @@
   right: 0;
   z-index: 9999;
   width: 100%;
-  height: 50px;
-  background-color: white;
+  height: 80px;
+  background-color:white ;
 }
 
 /* The element at the top of the page right after the fixed navigation bar
@@ -38,6 +38,8 @@
   display: inline-block;
   margin-right: 20px;
   margin-left: 10px;
+  font-size: 200%;
+  font-family: sans-serif;
 }
 a.sitename, a:visited.sitename {
   color: #fc5d5d;
@@ -110,7 +112,77 @@ a.sitename, a:visited.sitename {
     font-size: 14px;
   }
 }
+.flex{
+    margin-top: 1.5em;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url(images/header.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
 
+}
 
-/* header card /*
+.flex:hover .image {
+    opacity: 0.3;
+}
 
+.flex:hover .submit-btn {
+    opacity: 1;
+}
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+/* header card */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 70%;
+  margin-top: 10%;
+  margin-left: 8%;
+  padding: 2px 16px;
+  color: #ffffff;
+}
+
+#datacard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 30%;
+    padding: 2px 16px;
+    width: 100%;
+    float: right;
+    height: 100%;
+    color: #ffffff;
+
+}
+
+.submit-btn {
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  background: #0088aa;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  width: 20%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+  
+ 
+}
