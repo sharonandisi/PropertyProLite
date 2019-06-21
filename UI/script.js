@@ -79,7 +79,14 @@ function dashBoard() {
     window.open("dashboard.html");
 }
 
-//open homepage  window
-function openWin() {
-    window.open("dashboard.html");
+
+//open hlogin window
+function runCheck() {
+    window.open("login.html");
+}
+
+
+//open pro log in  window
+function runCheck1() {
+    window.open("prologin.html");
 }
