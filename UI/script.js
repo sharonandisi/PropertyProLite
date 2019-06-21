@@ -90,3 +90,8 @@ function runCheck() {
 function runCheck1() {
     window.open("prologin.html");
 }
+
+//open home page
+function openWin() {
+    window.open("index.html")
+}

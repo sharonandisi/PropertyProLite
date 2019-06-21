@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic page needs
+    ==========================================-->
+    <meta charset="UTF-8">
+    <title>Property Pro-Lite</title>
+
+    <!-- mobile specific metas
+    ==========================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS
+    ==========================================-->
+    <link rel="stylesheet" href="auth.css">
+
+    <!-- script
+    ==========================================-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="index-header">
+
+        <div>
+
+            <h3 class="logo" href="index.html" onclick=openWin()>
+                Property Pro-Lite
+            </h3>
+            <hr>
+
+
+        </div> <!-- End header__logo -->
+    </header>
+    <div class="row">
+        <div class="card animated fadeInUp">
+
+            <div class="column">
+                <div class="card-title">
+                    <h3>Welcome to PropertyPro-Lite</h3>
+                    <p> Access all your liked properties, searches, notes and more</p>
+                </div>
+                <form action="#">
+                    <input class="form-control" type="text" id="email" placeholder="email address" required />
+                    <input class="form-control" type="text" id="pass" placeholder="Password" required />
+                    <button class="submit-btn" onclick="openWin()">Sign In</button>
+
+                </form>
+                <br>
+                <div class="card-title" id="end">
+                    <p>Don't have an account? <a href="login.html"> Sign up</a></p>
+                </div>
+
+            </div>
+            <br>
+            <div class="column">
+                <div class="card-title" id="protitle">
+                    <h3>Real Estate professional or agent?</h3>
+                    <br>
+                    <p> We have you covered. Manage yur profile, leads, listings and more</p>
+                    <br>
+                </div>
+                <div class="card-body">
+                    <button class="submit-btn" id="prosign" onclick="runCheck2()">Pro Sign in</button>
+                </div>
+                <br>
+                <div class="card-title">
+                    <p id="endpro">Don't have an account? <a href="prosign.html"> Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab-content -->
+
+    </div> <!-- /form -->
+
+
+</body>
+
+</html>
