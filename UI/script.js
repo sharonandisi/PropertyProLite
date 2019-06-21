@@ -66,3 +66,8 @@ function showSlides() {
 function myFunction() {
     window.open("update.html");
 }
+
+//open post property window
+function openPost() {
+    window.open("post.html");
+}
