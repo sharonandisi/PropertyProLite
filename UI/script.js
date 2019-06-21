@@ -71,3 +71,15 @@ function myFunction() {
 function openPost() {
     window.open("post.html");
 }
+
+
+
+//open pdashboard  window
+function dashBoard() {
+    window.open("dashboard.html");
+}
+
+//open homepage  window
+function openWin() {
+    window.open("dashboard.html");
+}
