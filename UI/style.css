@@ -17,6 +17,8 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
 .flex {
     margin-top: 1.5em;
     background-color: rgba(0,0,0,0.5);
@@ -181,4 +183,14 @@ body{
   display: block;
 }
 
-
+/* set the footer position */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 5%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+}
