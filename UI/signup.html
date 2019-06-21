@@ -1,81 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic page needs
+    ==========================================-->
+    <meta charset="UTF-8">
+    <title>Property Pro-Lite</title>
+
+    <!-- mobile specific metas
+    ==========================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- CSS
+    ==========================================-->
+<link rel="stylesheet" href="auth.css">
+
+<!-- script
+    ==========================================-->
+<script src="script.js"></script>
+</head>
+
+<body>
+<header class="index-header">
+
+    <div>
+        
+        <a class="logo">
+            Property Pro-Lite
+        </a>
+        <hr>
 
 
-<div class="form">
+    </div> <!-- End header__logo -->
+</header>
+<div class="row">
+<div class="card animated fadeInUp">
+    
+    <div class="column">
+    <div class="card-title">
+        <h3>Welcome to PropertyPro-Lite</h3>
+        <p> Sign up to get property updates and local insights via email</p>
+    </div>
+    <form action="#">
+        <input class="form-control" type="text" id="email" placeholder="email address" required />
+        <input class="form-control" type="text" id="pass" placeholder="Password" required />
+        <button class="submit-btn" onclick="runCheck()">Sign Up</button>
 
-    <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="signup">
-            <h1>Sign Up for Free</h1>
-
-            <form action="/" method="post">
-
-                <div class="top-row">
-                    <div class="field-wrap">
-                        <label>
-                            First Name<span class="req">*</span>
-                        </label>
-                        <input type="text" required autocomplete="off" />
-                    </div>
-
-                    <div class="field-wrap">
-                        <label>
-                            Last Name<span class="req">*</span>
-                        </label>
-                        <input type="text" required autocomplete="off" />
-                    </div>
-                </div>
-
-                <div class="field-wrap">
-                    <label>
-                        Email Address<span class="req">*</span>
-                    </label>
-                    <input type="email" required autocomplete="off" />
-                </div>
-
-                <div class="field-wrap">
-                    <label>
-                        Set A Password<span class="req">*</span>
-                    </label>
-                    <input type="password" required autocomplete="off" />
-                </div>
-
-                <button type="submit" class="button button-block" />Get Started</button>
-
-            </form>
-
+    </form>
+     <br>
+    <div class="card-title" id="end">
+        <p>Already Registered?  <a href="login.html"> Log in</a></p>
+    </div>
+    
+    </div>
+  <br>
+    <div class="column">
+        <div class="card-title" id="protitle">
+            <h3>Are Real Estate professional or agent?</h3>
+            <br>
+            <p> We have you covered. Manage yur profile listings and more</p>
+            <br>
         </div>
-
-        <div id="login">
-            <h1>Welcome Back!</h1>
-
-            <form action="/" method="post">
-
-                <div class="field-wrap">
-                    <label>
-                        Email Address<span class="req">*</span>
-                    </label>
-                    <input type="email" required autocomplete="off" />
-                </div>
-
-                <div class="field-wrap">
-                    <label>
-                        Password<span class="req">*</span>
-                    </label>
-                    <input type="password" required autocomplete="off" />
-                </div>
-
-                <p class="forgot"><a href="#">Forgot Password?</a></p>
-
-                <button class="button button-block" />Log In</button>
-
-            </form>
-
+        <div class="card-body">
+         <button class="submit-btn" id="prosign" onclick="runCheck()">Pro Sign Up</button>
         </div>
+        <br>
+        <div class="card-title">
+            <p id="endpro">Already Registered? <a href="prologin.html"> Log in</a></p>
+        </div>
+    </div>
+    </div>
+</div>
 
-    </div><!-- tab-content -->
+<!-- tab-content -->
 
 </div> <!-- /form -->
+
+
+</body>
+</html>
