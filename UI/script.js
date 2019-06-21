@@ -101,3 +101,9 @@ function openWin() {
 function proPerty() {
     window.open("property.html")
 }
+
+// send message to Agent
+
+function reachAgent() {
+    window.open("contact.html")
+}
