@@ -95,3 +95,9 @@ function runCheck1() {
 function openWin() {
     window.open("index.html")
 }
+
+// open property page
+
+function proPerty() {
+    window.open("property.html")
+}
