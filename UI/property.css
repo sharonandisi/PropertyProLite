@@ -1,0 +1,164 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+/* fixed navigation bar */
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  color: #ff7979;
+  
+};
+
+
+
+/* responsive navigation menu  */
+.fixed-nav-bar li, .fixed-nav-bar a { 
+  height: 50px;
+  line-height: 50px;
+}
+.menu {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.menu a, .menu a:visited {
+  color: #d35353;
+}
+.menu a:hover, .menu a:target {
+  color: black;
+}
+.menu-items {
+  display: inline-block;
+}
+.sitename {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+a.sitename, a:visited.sitename {
+  color: #d35353;
+}
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu-items a {
+  text-decoration: none;
+}
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+.show {
+  background-image: url(assets/down-arrow-icon.png);
+}
+.hide {
+  background-image: url(assets/up-arrow-icon.png);
+}
+
+@media only screen and (max-width: 800px) {
+  .menu { 
+    position: relative;
+    width: 100%;
+  }
+  .sitename {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
+  .menu-items {
+    display: none; 
+    width: 100%;
+    margin-top: 50px;
+    background-color: #008378;
+  }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
+  .show, .hide {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .sitename, .show, .hide {
+    font-size: 14px;
+  }
+}
+
+/* grid layout */
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #929796;
+    background-color: #333;
+    border-radius: 5px;
+    
+}
+
+/* description section*/
+.specs {
+    margin-top: 5%;
+}
+.specs li {
+
+    display: inline-block;
+  font-size: 35px;
+  padding: 20px;
+
+}
+
+.submit-btn {
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  background: rgb(253, 113, 137);
+  color: #ffffff;
+  border: none;
+ 
+  padding: 15px 30px;
+  width: 100%;
+}

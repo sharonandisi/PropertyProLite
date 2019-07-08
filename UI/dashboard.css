@@ -1,0 +1,272 @@
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background-color:white ;
+}
+
+/* The element at the top of the page right after the fixed navigation bar
+   MUST have sufficient top margin or else it will be covered by the bar */
+.content {
+  margin-top: 20px;
+}
+
+/* Example responsive navigation menu  */
+.fixed-nav-bar li, .fixed-nav-bar a { 
+  height: 50px;
+  line-height: 50px;
+}
+.menu {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.menu a, .menu a:visited {
+  color: #ff7979;
+}
+.menu a:hover, .menu a:target {
+  color: black;
+}
+.menu-items {
+  display: inline-block;
+}
+.sitename {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 200%;
+  font-family: sans-serif;
+}
+a.sitename, a:visited.sitename {
+  color: #fc5d5d;
+}
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu-items a {
+  text-decoration: none;
+}
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+.show {
+  background-image: url(images/down-arrow-icon.png);
+}
+.hide {
+  background-image: url(images/up-arrow-icon.png);
+}
+
+@media only screen and (max-width: 800px) {
+  .menu { 
+    position: relative;
+    width: 100%;
+  }
+  .sitename {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
+  .menu-items {
+    display: none; 
+    width: 100%;
+    margin-top: 50px;
+    background-color: white;
+  }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
+  .show, .hide {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .sitename, .show, .hide {
+    font-size: 14px;
+  }
+}
+.flex{
+    margin-top: 1.5em;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url(images/header.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+
+}
+
+.flex:hover .image {
+    opacity: 0.3;
+}
+
+.flex:hover .submit-btn {
+    opacity: 1;
+}
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+/* header card */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 70%;
+  margin-top: 10%;
+  margin-left: 8%;
+  padding: 2px 16px;
+  color: #ffffff;
+}
+
+#datacard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 30%;
+    padding: 2px 16px;
+    width: 100%;
+    float: right;
+    height: 100%;
+    color: black;
+
+}
+
+.submit-btn {
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  background: #0088aa;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  width: 20%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+  
+ 
+}
+
+
+/* grid layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #929796;
+    background-color: #333;
+    border-radius: 5px;
+    
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

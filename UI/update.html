@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- basic page needs
+            ==========================================-->
+    <meta charset="UTF-8">
+    <title>Property Pro-Lite</title>
+
+    <!-- mobile specific metas
+            ==========================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS
+            ==========================================-->
+    <link rel="stylesheet" href="dashboard.css">
+
+
+    <!-- script
+            ==========================================-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- nav
+                ==========================================-->
+    <nav class="fixed-nav-bar">
+        <div id="menu" class="menu">
+            <a class="sitename" href="index.html">Property Pro-Lite</a>
+            <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+            <ul class="menu-items">
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="signup.html">Sign out</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-25">
+                    <label for="type">Property Type</label>
+                </div>
+                <div class="col-75">
+                    <select id="type" name="type">
+                        <option value="villa">Villa</option>
+                        <option value="massionette">Massionette</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="bungalow">Bungalow</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="location">Location</label>
+                </div>
+                <div class="col-75">
+                    <select id="location" name="location">
+                        <option value="addis ababa">Addis Ababa</option>
+                        <option value="arusha">Arusha</option>
+                        <option value="kampala">Kampala</option>
+                        <option value="kigali">Kigali</option>
+                        <option value="nairobi">Nairobi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="bedrooms">Bedrooms</label>
+                </div>
+                <div class="col-75">
+                    <select id="bedrooms" name="bedrooms">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="baths">Baths</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="baths" name="baths">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Description</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="photos">Photos</label>
+                </div>
+                <div class="col-75">
+                    <input type="file" name="photo" accept="image/*">
+                </div>
+            </div>
+            <div class="row">
+
+
+                <input type="submit" value="Submit" onclick=dashBoard()>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

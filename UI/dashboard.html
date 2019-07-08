@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- basic page needs
+            ==========================================-->
+    <meta charset="UTF-8">
+    <title>Property Pro-Lite</title>
+    
+    <!-- mobile specific metas
+            ==========================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- CSS
+            ==========================================-->
+    <link rel="stylesheet" href="dashboard.css">
+    
+    
+    <!-- script
+            ==========================================-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- nav
+                ==========================================-->
+    <nav class="fixed-nav-bar">
+        <div id="menu" class="menu">
+            <a class="sitename" href="index.html">Property Pro-Lite</a>
+            <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+            <ul class="menu-items">
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="signup.html">Sign out</a></li>
+
+            </ul>
+        </div>
+    </nav>
+ 
+    <div class="flex" id="header-div">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="images/img_avatar.png" alt="Avatar" class="middle" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" id="datacard">
+                    <div class="container">
+                        <ul>
+                            <li>NAME: <code>John Doe</code></li>
+                            <li>COMPANY: <code>John Estates</code></li>
+                            <li>AGENT ID: <code>3098754RWS</code></li>
+                            <br>
+                            <br>
+                            <br>
+                            <button class="submit-btn" onclick="openPost()"> Add New Property</a></button>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- css grid masonry layout-->
+    <div>
+        <h3>Active Property Listings</h3>
+    </div>
+    <div class="grid-layout" id="new-listings">
+        <div class="grid-item grid-item-1">item 1
+            <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Delete</button>
+            <button class="w3-button w3-white w3-border w3-border-blue w3-round-large" onclick="myFunction()">Update</button>
+            <form action="#">
+                <input type="checkbox" name="sold" value = "sold" > Mark as SOLD 
+                <br>
+            </form>
+        </div>
+        <div class="grid-item grid-item-2">item 2
+            <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Delete</button>
+            <button class="w3-button w3-white w3-border w3-border-blue w3-round-large" onclick="myFunction()">Update</button>
+            <form action="#">
+                <input type="checkbox" name="sold" value="sold"> Mark as SOLD
+                <br>
+            </form>
+        </div>
+        <div class="grid-item grid-item-3">item 3
+            <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Delete</button>
+            <button class="w3-button w3-white w3-border w3-border-blue w3-round-large" onclick="myFunction()">Update</button>
+            <form action="#">
+                <input type="checkbox" name="sold" value="sold"> Mark as SOLD
+                <br>
+            </form>
+        </div>
+        <div class="grid-item grid-item-4">item 4
+            <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Delete</button>
+            <button class="w3-button w3-white w3-border w3-border-blue w3-round-large" onclick="myFunction()">Update</button>
+            <form action="#">
+                <input type="checkbox" name="sold" value="sold"> Mark as SOLD
+                <br>
+            </form>
+        </div>
+        <div class="grid-item grid-item-4">item 5
+            <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Delete</button>
+            <button class="w3-button w3-white w3-border w3-border-blue w3-round-large"onclick="myFunction()">Update</button>
+            <form action="#">
+                <input type="checkbox" name="sold" value="sold"> Mark as SOLD
+                <br>
+            </form>
+        </div>
+        <div class="grid-item grid-item-4">item 6
+            <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Delete</button>
+            <button class="w3-button w3-white w3-border w3-border-blue w3-round-large"onclick="myFunction()">Update</button>
+            <form action="#">
+                <input type="checkbox" name="sold" value="sold"> Mark as SOLD
+                <br>
+            </form>
+        </div>
+    
+    
+    
+    </div>
+    
+    <br>
+    <br>
+    
+    <div>
+        <h3>Liked Property Listings</h3>
+    </div>
+    
+    <div class="grid-layout" id="new-listings">
+        <div class="grid-item grid-item-1">item 1</div>
+        <div class="grid-item grid-item-2">item 2</div>
+        <div class="grid-item grid-item-3">item 3</div>
+        <div class="grid-item grid-item-4">item 4</div>
+        <div class="grid-item grid-item-4">item 5</div>
+        <div class="grid-item grid-item-4">item 6</div>
+    
+    
+    </div>
+   
+</body>
+
+</html>
