@@ -1,15 +1,10 @@
-'use strict';
+const Joi = require('Joi');
+const types = require('./routes/type');
+const express = require("express");
+const app = express();
 
-var _express = require('express');
+app.use(express.json());
+app.use('/api/types', types);
 
-var _express2 = _interopRequireDefault(_express);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var app = (0, _express2.default)(); //server.js
-
-app.use(_express2.default.json());
-
-app.length('/', function (req, res) {
-    return res.status(200).send({ 'message': 'sample endpoint' });
-});
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}...`));
