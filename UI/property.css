@@ -15,6 +15,7 @@
   height: 50px;
   background-color: #ffffff;
   color: #ff7979;
+  cursor: pointer;
   
 };
 
@@ -135,6 +136,7 @@ a.sitename, a:visited.sitename {
     text-transform: uppercase;
     color: #929796;
     background-color: #333;
+    background-image: url(images/grid2.jpeg);
     border-radius: 5px;
     
 }
