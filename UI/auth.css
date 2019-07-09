@@ -22,10 +22,11 @@
 /* MAIN STYLES */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9f9;
-  color: #707070;
+  background: pink;
+  color: #f8dcdc;
   overflow: hidden;
   font-size: 18px;
+  opacity:0.85;
 }
 
 .column {
