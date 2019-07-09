@@ -91,13 +91,20 @@ function runCheck1() {
     window.open("prologin.html");
 }
 
+
 function runCheck2() {
     window.open("dashboard.html");
 }
-//open home page
+
+//open index page
 function openWin() {
     window.open("index.html")
 }
+//open home page
+function openWin1() {
+    window.open("home.html")
+}
+
 
 // open property page
 
