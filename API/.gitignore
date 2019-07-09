@@ -1,7 +1,0 @@
-# gitignore 
-
-node_modules
-
-#only apps should have lockfiles
-
-package-lock.json
