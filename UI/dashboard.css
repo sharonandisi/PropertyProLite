@@ -26,7 +26,7 @@
   margin: 0 auto;
 }
 .menu a, .menu a:visited {
-  color: #ff7979;
+  color: #043474;
 }
 .menu a:hover, .menu a:target {
   color: black;
@@ -42,7 +42,7 @@
   font-family: sans-serif;
 }
 a.sitename, a:visited.sitename {
-  color: #fc5d5d;
+  color: #040f4d;
 }
 .menu-items li {
   display: inline-block;
@@ -203,21 +203,29 @@ a.sitename, a:visited.sitename {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #929796;
-    background-color: #333;
+    color: white;
+    background-image: url(images/dashboard.jpeg);
     border-radius: 5px;
     
 }
-
-
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+#prosign {
+    background-image: url(images/dashboard.jpeg);
 }
+h3{ 
+  text-align: center;
+}
+.form-control {
+  width: 80%;
+  font-size: 18px;
+  display: block;
+  padding: 20px 30px;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 26px;
+  margin: 25px 0;
+}
+
+
 
 label {
   padding: 12px 12px 12px 0;
@@ -225,23 +233,29 @@ label {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: rgb(117, 159, 248);
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
+  margin-left: 25%; 
+  width: 50%;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: blue;
 }
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #daf1f7;
   padding: 20px;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 20%;
+  height: 80%;
+
 }
 
 .col-25 {
@@ -263,6 +277,27 @@ input[type=submit]:hover {
   clear: both;
 }
 
+/* ANIMATION */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+}
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {

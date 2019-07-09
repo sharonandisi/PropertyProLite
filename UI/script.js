@@ -91,6 +91,11 @@ function runCheck1() {
     window.open("prologin.html");
 }
 
+
+function runCheck2() {
+    window.open("dashboard.html");
+}
+
 //open index page
 function openWin() {
     window.open("index.html")

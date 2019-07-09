@@ -4,8 +4,11 @@
     font-family: sans-serif;
     font-size: 40px;
     text-align: center;
-    margin-left: 420px;
-    color:rgb(187, 90, 90);
+    color:rgb(247, 247, 247);
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    cursor: pointer;
 }
 
 
@@ -22,10 +25,12 @@
 /* MAIN STYLES */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9f9;
-  color: #707070;
+  background:white;
+  color: black;
   overflow: hidden;
+  background-image: url(images/signin.jpeg);
   font-size: 18px;
+  opacity:0.85;
 }
 
 .column {
@@ -39,8 +44,8 @@ body {
 
 .card {
   background: #fff;
-  height: 400px;
-  width: 100%;
+  height: 450px;
+  width: 50%;
   padding: 50px 33px;
   margin: 10% auto;
   border-radius: 21px;
@@ -49,7 +54,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 80%;
+    width: 50%;
   }
 }
 
@@ -61,7 +66,7 @@ body {
     margin-left: 20%;
 }
 .form-control {
-  width: 100%;
+  width: 80%;
   font-size: 18px;
   display: block;
   padding: 20px 30px;
@@ -78,7 +83,7 @@ body {
   background: rgb(253, 113, 137);
   color: #ffffff;
   border: none;
- 
+  opacity: 0.55;
   padding: 15px 30px;
   width: 50%;
 }
