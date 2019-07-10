@@ -15,6 +15,8 @@
     <!-- CSS
     ==========================================-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- script
     ==========================================-->
@@ -26,14 +28,18 @@
     ==========================================-->
     <header class="index-header">
 
-        <div>
-            <p onclick=runCheck()> Sign out</p>
-            <hr>
-            <a class="logo">
+        <div class="topnav" id="myTopnav">
+            <a onclick=runCheck()>Sign out</a>
+            <a class="logo" class="active">
                 Property Pro-Lite
             </a>
-
-
+            <a href="#buy">Home</a>
+            <a href="#rent">Rent</a>
+            <a href="#buy">Buy</a>
+            <a href="#sold">Sold</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div> <!-- End header__logo -->
     </header>
     <!-- s-header -->
@@ -42,204 +48,177 @@
     <div class="flex" id="header-div">
         <br>
         <h2> Home is where the heart is</h2>
-        <p>The most complete source for home and real estate for sale or rent near you</p>
+        <br>
 
         <div class="navbar">
-
-
-            <div class="dropdown">
-                <button class="dropbtn">Buy
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Massionettes</a>
-                    <a href="#">Villas</a>
-                    <a href="#">Apartments</a>
-                    <a href="#">Bungalows</a>
+            <!----- searchbar----->
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton">
+                        Search
+                    </button>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Rent
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Massionettes</a>
-                    <a href="#">Villas</a>
-                    <a href="#">Apartments</a>
-                    <a href="#">Bungalows</a>
+        </div>
 
-                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- css grid masonry layout-->
+
+        <div class="grid-layout" id="new-listings1">
+            <div class="grid-item grid-item-1">
+
+                <button class="submit-btn" onclick="proPerty()">View</button>
+
             </div>
-            <a href="sold.html">Just Sold</a>
+            <div class="grid-item grid-item-2" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-3" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <h3>New Listings in Kigali, RW</h3>
+        </div>
+
+        <div class="grid-layout" id="new-listings">
+            <div class="grid-item grid-item-1">
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-2" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-3" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <h3>New Listings in Kampala,UG</h3>
+        </div>
+        <div class="grid-layout" id="new-listings">
+            <div class="grid-item grid-item-1">
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-2" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-3" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+
+
+
         </div>
         <br>
         <br>
-        <!----- searchbar----->
-        <div class="wrap">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                <button type="submit" class="searchButton">
-                    Search
-                </button>
+
+        <div>
+            <h3>New Listings in Arusha, TZ</h3>
+        </div>
+        <div class="grid-layout" id="new-listings">
+            <div class="grid-item grid-item-1">
+                <button class="submit-btn" onclick="proPerty()">View</button>
             </div>
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <!-- css grid masonry layout-->
-    <div>
-        <h3>New Listings in Nairobi,KE:</h3>
-    </div>
-    <div class="grid-layout" id="new-listings">
-        <div class="grid-item grid-item-1">
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-2" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-3" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
+            <div class="grid-item grid-item-2" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-3" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
 
 
 
-    </div>
+        </div>
+        <br>
+        <br>
 
-    <br>
-    <br>
-
-    <div>
-        <h3>New Listings in Kigali, RW</h3>
-    </div>
-
-    <div class="grid-layout" id="new-listings">
-        <div class="grid-item grid-item-1">
-            <button class="submit-btn" onclick="proPerty()">View</button>
+        <div>
+            <h3>New Listings in Addis Ababa, ETH</h3>
         </div>
-        <div class="grid-item grid-item-2" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-3" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
+        <div class="grid-layout" id="new-listings">
+            <div class="grid-item grid-item-1">
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-2" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-3" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
+            <div class="grid-item grid-item-4" onclick=proPerty()>
+                <button class="submit-btn" onclick="proPerty()">View</button>
+            </div>
 
 
 
-    </div>
-
-    <br>
-    <br>
-
-    <div>
-        <h3>New Listings in Kampala,UG</h3>
-    </div>
-    <div class="grid-layout" id="new-listings">
-        <div class="grid-item grid-item-1">
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-2" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-3" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
         </div>
 
-
-
-    </div>
-    <br>
-    <br>
-
-    <div>
-        <h3>New Listings in Arusha, TZ</h3>
-    </div>
-    <div class="grid-layout" id="new-listings">
-        <div class="grid-item grid-item-1">
-            <button class="submit-btn" onclick="proPerty()">View</button>
+        <div class="footer">
+            <footer>&copy; Copyright 2019 Property Pro-Lite</footer>
         </div>
-        <div class="grid-item grid-item-2" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-3" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-
-
-
-    </div>
-    <br>
-    <br>
-
-    <div>
-        <h3>New Listings in Addis Ababa, ETH</h3>
-    </div>
-    <div class="grid-layout" id="new-listings">
-        <div class="grid-item grid-item-1">
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-2" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-3" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-        <div class="grid-item grid-item-4" onclick=proPerty()>
-            <button class="submit-btn" onclick="proPerty()">View</button>
-        </div>
-
-
-
-    </div>
-
-    <div class="footer">
-    <footer>&copy; Copyright 2019 Property Pro-Lite</footer>
-    </div>
 
 </body>
 

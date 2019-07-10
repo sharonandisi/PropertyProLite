@@ -14,6 +14,8 @@
     <!-- CSS
     ==========================================-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- script
     ==========================================-->
@@ -22,16 +24,20 @@
 <body>
     <!-- header
     ==========================================-->
-    <header class = "index-header">
+    <header class = "index-header" >
 
-        <div>
-            <p onclick=runCheck()>Sign up |   Sign in</p>
-            <hr>
-           <a class="logo" >
+        <div class="topnav" id="myTopnav">
+            <a onclick=runCheck()>Sign up |   Sign in</a>
+           <a class="logo" class="active">
                 Property Pro-Lite
             </a>
-
-            
+            <a href="#buy">Home</a>
+            <a href="#rent">Rent</a>
+            <a href="#buy">Buy</a>
+            <a href="#sold">Sold</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+                <i class="fa fa-bars"></i>
+            </a>   
         </div> <!-- End header__logo -->
     </header>
 <!-- s-header -->
@@ -40,41 +46,10 @@
 <div class= "flex" id ="header-div">
     <br>
     <h2> Home is where the heart is</h2>
-    <p>The most complete source for home and real estate for sale or rent near you</p>
+    <br>
 
    <div class="navbar">
-    
-    
-    <div class="dropdown">
-        <button class="dropbtn">Buy
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="#">Massionettes</a>
-            <a href="#">Villas</a>
-            <a href="#">Apartments</a>
-            <a href="#">Bungalows</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Rent
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="#">Massionettes</a>
-            <a href="#">Villas</a>
-            <a href="#">Apartments</a>
-            <a href="#">Bungalows</a>
-
-        </div>
-    </div>
-    <a href="sold.html">Just Sold</a>
-   </div>
- <br>
- <br>
-
 <!----- searchbar----->
-
     <div class="wrap">
         <div class="search">
             <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -89,11 +64,13 @@
 <br>
 <br>
 <br>
+<br>
+
 
 <!-- css grid masonry layout-->
-<div><h3>New Listings in Nairobi,KE:</h3></div>
+
 <div class="grid-layout" 
-id="new-listings">
+id="new-listings1">
     <div class="grid-item grid-item-1"> 
 
         <button class ="submit-btn" onclick="proPerty()">View</button>
